@@ -7,5 +7,5 @@ curl -L https://raw.githubusercontent.com/BGboy-bit/my-code-server/main/code.sh 
 ```
 中国大陆推荐
 ```
-curl -L https://gitee.com/tongxue-zhu/my-code-server/main/code.sh -o code.sh && chmod +x code.sh && bash code.sh
+curl -L -O https://gitee.com/tongxue-zhu/my-code-server/raw/main/code.sh && chmod +x code.sh && bash code.sh
 ```
