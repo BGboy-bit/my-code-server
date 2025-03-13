@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
+# 检查是否已安装 Docker
+if ! command -v docker >/dev/null 2>&1; then
+  echo "检测到 Docker 未安装，正在安装 Docker..."
+  curl -fsSL get.docker.com -o install-docker.sh
+  sudo sh install-docker.sh --mirror Aliyun
+fi
+
 GITHUB_BASE_URL="https://raw.githubusercontent.com/BGboy-bit/my-code-server/main"
 
 # 在 /root 下创建 code-server 目录并进入目录
