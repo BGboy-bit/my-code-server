@@ -15,10 +15,10 @@ curl -L -o Dockerfile "${GITHUB_BASE_URL}/Dockerfile" || { echo "下载 Dockerfi
 read -p "请输入时区（例如 Asia/Shanghai） [Asia/Shanghai]: " USER_TZ
 USER_TZ=${USER_TZ:-Asia/Shanghai}
 
-read -p "请输入 PASSWORD [123456]: " USER_PASSWORD
+read -p "请输入 登录密码 [123456]: " USER_PASSWORD
 USER_PASSWORD=${USER_PASSWORD:-123456}
 
-read -p "请输入 PROXY_DOMAIN (留空则取消): " USER_PROXY_DOMAIN
+read -p "请输入 需要反代的域名 (留空则取消): " USER_PROXY_DOMAIN
 
 # 构建 Docker 镜像
 echo "正在构建 Docker 镜像..."
