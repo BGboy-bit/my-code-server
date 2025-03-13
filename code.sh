@@ -8,7 +8,7 @@ if ! command -v docker >/dev/null 2>&1; then
   sudo sh install-docker.sh --mirror Aliyun
 fi
 
-GITHUB_BASE_URL="https://github.com/BGboy-bit/my-code-server/raw/main"
+GITHUB_BASE_URL="https://raw.githubusercontent.com/BGboy-bit/my-code-server/main"
 
 # 在 /root 下创建 code-server 目录并进入目录
 TARGET_DIR="/root/code-server"
