@@ -49,5 +49,5 @@ else
     my-code-server
 fi
 
-echo "code-server正在启动，具体请看日志: docker logs code-server"
+echo "code-server正在启动，具体请看日志: docker logs code-server -f"
 echo "启动成功后请访问: http://<你的服务器IP>:8080 或 http://域名:8080"
